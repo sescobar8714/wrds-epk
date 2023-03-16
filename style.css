@@ -1,0 +1,218 @@
+body{
+    background-color: rgb(45, 45, 45);
+
+}
+
+.header {
+    position: fixed;
+}
+
+.sidebar {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    padding: 58px 0 0; /* Height of navbar */
+    margin-top: 6%;
+    margin-bottom: 7.7%;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
+    width: 100px;
+    z-index: 600;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    background-color: aliceblue;
+
+}
+  
+
+
+.sidebar .active {
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+  }
+  
+.sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 48px);
+    padding-top: 0.5rem;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+
+
+i {
+    font-size: 2.2rem;
+}
+
+.navbar {
+    background: hsla(0, 0%, 0%, 1);
+    background: linear-gradient(315deg, hsla(0, 0%, 0%, 1) 10%, hsla(56, 100%, 95%, 1) 53%, hsla(54, 98%, 52%, 1) 100%);
+    background: -moz-linear-gradient(315deg, hsla(0, 0%, 0%, 1) 10%, hsla(56, 100%, 95%, 1) 53%, hsla(54, 98%, 52%, 1) 100%);
+    background: -webkit-linear-gradient(315deg, hsla(0, 0%, 0%, 1) 10%, hsla(56, 100%, 95%, 1) 53%, hsla(54, 98%, 52%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#000000", endColorstr="#FFFDE4", GradientType=1 );
+    
+}
+
+.h1 {
+    font-size: 3rem;
+    font-family: 'Staatliches', cursive;
+    color: #f86700;
+    text-shadow: #FC0 1px 0 10px;
+
+    
+}
+
+.about {
+    background-image: url("./images/hip-hop-wrds2.jpg");
+}
+
+.music {
+    background-image: url("./images/background-music-wrds.jpg");
+}
+
+.video {
+    background: hsla(339, 100%, 55%, 1);
+    background: linear-gradient(90deg, hsla(339, 100%, 55%, 1) 0%, hsla(197, 100%, 64%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(339, 100%, 55%, 1) 0%, hsla(197, 100%, 64%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(339, 100%, 55%, 1) 0%, hsla(197, 100%, 64%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FF1B6B", endColorstr="#45CAFF", GradientType=1 );
+}
+
+.music_spacer {
+    margin-left: 10%;
+    margin-top: 3%;
+}
+
+h2 {
+    color: bisque;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+p {
+    color: #F1EEC8;
+    margin-top: 70px;
+    padding: 1.25rem;
+    /* padding-bottom: 0px; */
+    width: 100%;
+    font-size: large;
+    
+}
+
+
+.text_box {
+    background-color: #213d3f;
+    width: 75%;
+
+}
+
+.music_text_box {
+    background-color: #213d3f;
+    width: 75%;
+    margin-left: 4.5rem;
+    margin-top: 2.5rem;
+}
+
+hr{
+    color: bisque;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.h3 {
+    color: #F1EEC8;
+}
+
+.pic_holder {
+    height: 25rem;
+    width: 31.25rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, 
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, 
+    rgba(0, 0, 0, 0.12) 0px 4px 6px, 
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, 
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.music_sm_spacer {
+    padding-left: 8.6rem;
+}
+
+.video_sm_spacer {
+     padding-left: 8.6rem;
+}
+
+
+footer {
+    position: fixed;
+    bottom: 35px;
+    height: 2.5rem;
+    /* margin-top: .50rem  ; */
+}
+
+.cta {
+    color: #ccff00;
+    font-family: 'Oswald', sans-serif;
+    margin-top: 0px;
+    font-size: 2rem;
+    word-spacing: .50rem;
+
+}
+
+.music-about {
+    margin-left: 6.5rem;
+   
+}
+
+
+.music-row {
+    margin-left: 9rem ;
+}
+
+.card-body {
+    font-size: larger;
+    color:antiquewhite;
+    background-color: gray;
+}
+
+
+
+@media (max-width: 767.98px) { 
+
+    footer {
+      display: none;
+    }
+    .pic_holder {
+        box-shadow: none;
+    }
+
+    .music-about{
+        margin-left: 3.75rem;
+    
+    }
+
+}
+
+@media (max-width: 1400px) { 
+
+    /* .music_sm_spacer {
+        width: 350px;
+    }
+
+    .music_sm_spacer:nth-of-type(1) {
+        margin-left: 7.6rem;
+    }
+
+    .music_sm_spacer:nth-of-type(2) {
+       
+    } */
+
+
+}
+
+
+
+/* font-family: 'Oswald', sans-serif;
+font-family: 'Staatliches', cursive; */
